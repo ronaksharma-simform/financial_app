@@ -1,3 +1,4 @@
+import type { Transaction } from "./transaction.types";
 interface User {
 	name: string;
 	age: number;
@@ -7,5 +8,6 @@ interface User {
 	dateOfBirth: Date;
     isActive:boolean;    
     balance:number;
+	transactions:[Transaction]
 }
 export type {User};
