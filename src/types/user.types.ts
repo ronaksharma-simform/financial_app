@@ -8,6 +8,6 @@ interface User {
 	dateOfBirth: Date;
     isActive:boolean;    
     balance:number;
-	transactions:[Transaction]
+	transactions:Transaction[]
 }
 export type {User};

@@ -1,0 +1,14 @@
+#userShowcaseSection{
+    display: flex;
+    /* justify-content: center; */
+    gap: 10px;
+}
+#userShowcaseSection > div{
+   border: 2px solid black;
+   padding: 10px;
+}
+table ,tr, td,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px 30px ;
+}

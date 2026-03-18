@@ -1,4 +1,4 @@
-import TransactionStatus from "./types/constants";
+import TransactionStatus from "./types/constants.js";
 import type { Transaction } from "./types/transaction.types";
 import type { User } from "./types/user.types";
 
@@ -22,7 +22,7 @@ export default function executeTransaction(
 			sender: sender,
 			receiver: reciever,
 			amount: amount,
-            time:new Date(),
+			time: new Date(),
 			status: TransactionStatus.Completed,
 		};
 	} catch (error) {
@@ -31,7 +31,7 @@ export default function executeTransaction(
 			sender: sender,
 			receiver: reciever,
 			amount: amount,
-            time:new Date(),
+			time: new Date(),
 			status: TransactionStatus.Failed,
 		};
 	}

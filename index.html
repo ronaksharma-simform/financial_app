@@ -1,12 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial App</title>
-</head>
-<body>
-    <h1>Financial App</h1>
-    <script type="module" src="./dist/index.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Financial App</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<h1>Financial App</h1>
+		<!-- Users Details Showcase -->
+		<h3>Users</h3>
+		<div id="userShowcaseSection"></div>
+		<br />
+		<br />
+		<!-- Selecting sender and receiver for making transactions -->
+		<label for="sender">Sender </label>
+		<select name="sender" id="sender"></select>
+		<label for="receiver">Receiver </label>
+		<select name="receiver" id="receiver"></select>
+		<!-- Amount to transfer -->
+		<input type="number" id="amount" />
+		<button id="sendAmount">Send</button>
+		<!-- Transactions History -->
+		<br /><br />
+		<h3>Transaction History</h3>
+		<table id="transactionHistory">
+			
+		</table>
+		<script type="module" src="./dist/index.js"></script>
+	</body>
 </html>
